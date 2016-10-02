@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Please Enter Your Details For Our Dating Website</h1>
+<form method="post" enctype="multipart/form-data" action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+ <fieldset>
+  <legend>Your Face:</legend>
+	<label for="image">Your Image:</label>
+	<input type="file" name="filetoupload" id="preview" required>
+	<br>
+	<label for="img">Image preview:</label>
+  <img src="" for="img" id="preview">
+ </fieldset>
+ <br>
+ 
+ <fieldset>
+  <legend>Your General Details</legend>
+  <label for="Name">Name:</label>
+  <input type="text" name="Name" preload="Your full name" id="name" required >
+  <br>
+  <label for="gender">Gender:</label>
+  <input type="radio" name="gender" id="gender">Male 
+  <input type="radio" name="gender" id="gender">Female 
+  <br>
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" required>
+  <br>
+  <label for="dob">Date of Birth:</label>
+  <input type="Date" id="dob" name="dob">
+  <br>
+  <label for="color">Favorite Color:</label>
+  <input type="color" id="color" name="color">
+  <br>
+   <label for="country">Which Country</label>
+   <select>
+    <option></option>
+   <option>India</option>
+    <option>America</option>
+	 <option>Russia</option>
+	  <option>China</option>
+	   <option>Hong Kong</option>
+   </select>
+   
+ </fieldset>
+ <br>
+ <fieldset>
+  <legend>Your Indicators</legend>
+ <label for="Height">Height:</label>
+ Short<input type="range" id="height" name="height"min="0" max="100" step="5" value="50">Tall<br>
+ <label for="salary">Salary:</label>
+ Poor<input type="range" id="salary" name="salary" min="0" max="100" step="5" value="50">Rich<br>
+ </fieldset>
+ <br>
+ <fieldset>
+  <legend>Your Contact Inforamtion</legend>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br>
+  <label for"tele">Mobile:</label>
+  <input type="tel" id="tele" nmae="tele"><br>
+  <label for="Address">Address:</label>
+  <textarea name="add"></textarea><br>
+  <label for="method">Method to contact you:</label>
+  <input type="checkbox" name="email">Email 
+  <input type="checkbox" name="whatsapp">Whtasapp 
+  <input type="checkbox" name="appchat">In-appchat
+ </fieldset>
+ <input type="submit" value="submit">
+</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>
