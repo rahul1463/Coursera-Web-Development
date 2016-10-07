@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Part 2 Javascript advance</title>
+<style>
+	#leftside{
+
+		height:500px;
+		width:500px;
+		position:absolute;
+	}
+	#rightside{
+		left:650px;
+		height:500px;
+		width:500px;
+		position: absolute;
+		border-left: 1px solid black;
+	}
+
+
+</style>
+<script>
+
+function myFunction() 
+{
+	var t=40, l=50;
+	for(var i=0;i<5;i++)
+	{
+	x=document.createElement("IMG");
+    x.src ="http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png"; 
+     x.style.position="absolute";
+    x.style.top=t+"px";
+	x.style.left=l+"px";
+    document.getElementById("leftside").appendChild(x); 
+    var x=(Math.random()*100);
+	x=Math.floor(x);
+	t=t+x;
+	 var y=(Math.random()*150);
+	y=Math.floor(y);
+	l=l+y;
+    }
+   	   
+}   
+</script>
+</head>
+
+<body onload="myFunction()">
+<h1>Matching game</h1>
+<p>Click on the extra smiling face on the left</p>
+<div id="leftside"></div>
+
+<div id="rightside"></div>
+
+
+
+
+</body>
+</html>
